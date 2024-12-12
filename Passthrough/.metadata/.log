@@ -1,0 +1,133 @@
+!SESSION 2024-12-12 16:13:03.205 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.8-internal
+java.vendor=N/A
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2024-12-12 16:13:32.685
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-12-12 16:13:32.685
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.papyrus.infra.ui.emf', id='org.eclipse.papyrus.infra.emf.readonly.EnableWriteCommand', categoryId='org.eclipse.papyrus.editor.category'
+
+!ENTRY org.eclipse.ui 2 0 2024-12-12 16:13:57.253
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-12-12 16:13:57.253
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.papyrus.infra.ui.emf', id='org.eclipse.papyrus.infra.emf.readonly.EnableWriteCommand', categoryId='org.eclipse.papyrus.editor.category'
+
+!ENTRY org.eclipse.jface 2 0 2024-12-12 16:13:58.984
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-12-12 16:13:58.984
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@133d0471,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@33cec966,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-12-12 16:13:58.984
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@643fed50,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@65b07b9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-12 16:14:03.215
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dferreir'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 4 2 2024-12-12 16:14:04.725
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException
+	at org.wso2.integrationstudio.carbonserver44microei12.handlers.PlatformEarlyStartUpHandler.createMicroIntegratorRunProfile(PlatformEarlyStartUpHandler.java:224)
+	at org.wso2.integrationstudio.carbonserver44microei12.handlers.PlatformEarlyStartUpHandler.earlyStartup(PlatformEarlyStartUpHandler.java:71)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2667)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 4 0 2024-12-12 16:14:04.727
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'org.wso2.integrationstudio.carbonserver44microei12' plug-in.
+!STACK 0
+java.lang.NullPointerException
+	at org.wso2.integrationstudio.carbonserver44microei12.handlers.PlatformEarlyStartUpHandler.createMicroIntegratorRunProfile(PlatformEarlyStartUpHandler.java:224)
+	at org.wso2.integrationstudio.carbonserver44microei12.handlers.PlatformEarlyStartUpHandler.earlyStartup(PlatformEarlyStartUpHandler.java:71)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2667)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-12-12 16:14:04.964
+!MESSAGE Removing PartDescriptorImpl with the "org.wso2.sample.multipage.form.editor.editors.FormView" id and the "My View" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.wso2.integrationstudio.updater 4 0 2024-12-12 16:14:22.145
+!MESSAGE Error while connecting to https://product-dist.wso2.com/p2/integration-studio/release-notes/8.1.0
+!STACK 0
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=403, URL=https://product-dist.wso2.com/p2/integration-studio/release-notes/8.1.0
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:762)
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:707)
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:297)
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:286)
+	at org.wso2.integrationstudio.updater.handler.RunUpdaterRootJob.getReleaseNotes(RunUpdaterRootJob.java:188)
+	at org.wso2.integrationstudio.updater.handler.RunUpdaterRootJob.loadUpdateNotificationPopup(RunUpdaterRootJob.java:79)
+	at org.wso2.integrationstudio.updater.handler.RunUpdaterRootJob.checkUpdatesAvailable(RunUpdaterRootJob.java:70)
+	at org.wso2.integrationstudio.updater.handler.RunUpdaterRootJob.run(RunUpdaterRootJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.wso2.tools.eclipse.platform.core 2 0 2024-12-12 16:33:17.668
+!MESSAGE CApp type "service/dataservice" is already registered with another handler
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-12-12 16:46:20.790
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$13(LanguageServerWrapper.java:425)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1736)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1728)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$4(LanguageServerWrapper.java:260)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/passthrough" name="passthrough" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <log level="custom" separator=",">
+                <property expression="$body" name="Message Recieved"/>
+            </log>
+            <call blocking="true">
+                <endpoint key="theEndpoint"/>
+            </call>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence>
+            <log level="custom">
+                <property name="Error" value="Something went wrong"/>
+            </log>
+        </faultSequence>
+    </resource>
+</api>
