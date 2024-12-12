@@ -1,3 +1,0 @@
-<api xmlns="http://ws.apache.org/ns/synapse" context="/passthrough" name="passthrough">
-<resource methods="GET"><inSequence/><outSequence/><faultSequence/></resource>
-</api>
