@@ -5,13 +5,10 @@
             <log level="custom" separator=",">
                 <property expression="json-eval($)" name="Message Recieved"/>
             </log>
-            <property action="remove" name="HTTP_METHOD" scope="axis2"/>
-            <property name="HTTP_METHOD" scope="axis2" type="STRING" value="POST"/>
             <datamapper config="gov:datamapper/mapper.dmc" inputSchema="gov:datamapper/mapper_inputSchema.json" inputType="JSON" outputSchema="gov:datamapper/mapper_outputSchema.json" outputType="JSON" xsltStyleSheet="gov:datamapper/mapper_xsltStyleSheet.xml"/>
-            <call>
+            <call blocking="true">
                 <endpoint key="endpoint"/>
                 <source type="body"/>
-                <target type="body"/>
             </call>
         </inSequence>
         <outSequence/>
