@@ -9,7 +9,6 @@
             <call blocking="true">
                 <endpoint key="theEndpoint"/>
             </call>
-            <respond/>
         </inSequence>
         <outSequence/>
         <faultSequence>
