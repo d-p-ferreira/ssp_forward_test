@@ -134,6 +134,28 @@
                       <element xmi:type="esb:RespondMediator" href="forward.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2"/>
                       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3eC7BLxGEe-cieGXs52n4w" x="359" y="38" width="84" height="115"/>
                     </children>
+                    <children xmi:type="notation:Node" xmi:id="_jfS2ILxdEe-cieGXs52n4w" type="3761">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_jfS2JbxdEe-cieGXs52n4w" type="5211"/>
+                      <children xmi:type="notation:Node" xmi:id="_jfbZALxdEe-cieGXs52n4w" type="3762">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_jfbZAbxdEe-cieGXs52n4w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_jfbZArxdEe-cieGXs52n4w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_jfbZA7xdEe-cieGXs52n4w"/>
+                        <element xmi:type="esb:DataMapperMediatorInputConnector" href="forward.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@inputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jfbZBLxdEe-cieGXs52n4w" x="-6" y="-5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_jfcAELxdEe-cieGXs52n4w" type="3763">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_jfcAEbxdEe-cieGXs52n4w"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_jfcAErxdEe-cieGXs52n4w" fontName="Segoe UI"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_jfcAE7xdEe-cieGXs52n4w"/>
+                        <element xmi:type="esb:DataMapperMediatorOutputConnector" href="forward.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@outputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jfcAFLxdEe-cieGXs52n4w" x="64" y="-9"/>
+                      </children>
+                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_jfS2IbxdEe-cieGXs52n4w"/>
+                      <styles xmi:type="notation:FontStyle" xmi:id="_jfS2IrxdEe-cieGXs52n4w" fontName="Segoe UI"/>
+                      <styles xmi:type="notation:LineStyle" xmi:id="_jfS2I7xdEe-cieGXs52n4w"/>
+                      <element xmi:type="esb:DataMapperMediator" href="forward.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jfS2JLxdEe-cieGXs52n4w" x="141" y="91"/>
+                    </children>
                     <styles xmi:type="notation:TitleStyle" xmi:id="_3bmD9rxGEe-cieGXs52n4w" showTitle="true"/>
                   </children>
                   <styles xmi:type="notation:DescriptionStyle" xmi:id="_3bmD8bxGEe-cieGXs52n4w"/>
@@ -216,11 +238,6 @@
     <element xmi:type="esb:EsbLink" href="forward.esb#//@server/@children.0/@resources.0/@outputConnector/@outgoingLink"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3hpoorxGEe-cieGXs52n4w" points="[6, 5, -5, 0]$[5, 0, -6, -5]"/>
   </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_3iEfYLxGEe-cieGXs52n4w" type="4001" source="_3cZ8QLxGEe-cieGXs52n4w" target="_3dI8ELxGEe-cieGXs52n4w" roundedBendpointsRadius="5" routing="Rectilinear">
-    <styles xmi:type="notation:FontStyle" xmi:id="_3iEfYbxGEe-cieGXs52n4w" fontName="Segoe UI"/>
-    <element xmi:type="esb:EsbLink" href="forward.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3iEfYrxGEe-cieGXs52n4w" points="[-11, 0, 69, 0]$[-74, 0, 6, 0]"/>
-  </edges>
   <edges xmi:type="notation:Connector" xmi:id="_3iLNELxGEe-cieGXs52n4w" type="4001" source="_3dKKMLxGEe-cieGXs52n4w" target="_3ePvULxGEe-cieGXs52n4w" roundedBendpointsRadius="5" routing="Rectilinear">
     <styles xmi:type="notation:FontStyle" xmi:id="_3iLNEbxGEe-cieGXs52n4w" fontName="Segoe UI"/>
     <element xmi:type="esb:EsbLink" href="forward.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@outputConnector/@outgoingLink"/>
@@ -235,5 +252,15 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_3rQQkbxGEe-cieGXs52n4w" fontName="Segoe UI"/>
     <element xmi:type="esb:EsbLink" href="forward.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@endpointOutputConnector/@outgoingLink"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3rQQkrxGEe-cieGXs52n4w" points="[2, 9, -31, -110]$[31, 114, -2, -5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_jfwwMLxdEe-cieGXs52n4w" type="4001" source="_3cZ8QLxGEe-cieGXs52n4w" target="_jfbZALxdEe-cieGXs52n4w" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_jfwwMbxdEe-cieGXs52n4w" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="forward.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jfwwMrxdEe-cieGXs52n4w" points="[6, -1, -6, 0]$[6, 0, -6, 1]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_jgAn0LxdEe-cieGXs52n4w" type="4001" source="_jfcAELxdEe-cieGXs52n4w" target="_3dI8ELxGEe-cieGXs52n4w" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_jgAn0bxdEe-cieGXs52n4w" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="forward.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jgAn0rxdEe-cieGXs52n4w" points="[-11, 1, 46, 0]$[-51, 0, 6, -1]"/>
   </edges>
 </notation:Diagram>
