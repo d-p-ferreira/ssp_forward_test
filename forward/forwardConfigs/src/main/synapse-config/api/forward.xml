@@ -6,6 +6,7 @@
                 <property expression="json-eval($)" name="Message Recieved"/>
             </log>
             <datamapper config="gov:datamapper/mapper.dmc" inputSchema="gov:datamapper/mapper_inputSchema.json" inputType="JSON" outputSchema="gov:datamapper/mapper_outputSchema.json" outputType="JSON" xsltStyleSheet="gov:datamapper/mapper_xsltStyleSheet.xml"/>
+            <property expression="get-property('env', 'downstream')" name="uri.var.downstream" scope="default" type="STRING"/>
             <call blocking="true">
                 <endpoint key="endpoint"/>
                 <source type="body"/>
