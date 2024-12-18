@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <endpoint name="endpoint" xmlns="http://ws.apache.org/ns/synapse">
-    <http method="post" uri-template="https://4yvmr.wiremockapi.cloud/enqman/">
+    <http method="post" uri-template="{get-property('env', 'downstream')}">
         <suspendOnFailure>
             <initialDuration>-1</initialDuration>
             <progressionFactor>1.0</progressionFactor>
